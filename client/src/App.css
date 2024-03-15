@@ -13,7 +13,7 @@
   border: 2px;
 }
 
-.register, .ordermedicines, .controlchain, .track {
+.register, .orderproducts, .controlchain, .track {
   background-color: azure;
   border: 2px solid #ccc;
   border-radius: 8px;
