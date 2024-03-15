@@ -1,3 +1,5 @@
+@import url("./font.css");
+
 :root {
   --primary-blue: #3987fd;
   --primary-orange: #fd6d00;
@@ -149,3 +151,74 @@
 }
 
 /* End Home Page */
+/* Roles Page */
+
+.roles-main-root {
+  min-height: 100vh;
+  background-color: var(--light-grey);
+  padding: 20px;
+}
+
+.roles-root {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  background-color: var(--light-grey);
+}
+
+.roles-account {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.roles-container {
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 20px;
+}
+
+.roles-left-container,
+.roles-right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.roles-header {
+  font-family: var(--font-ClashGrotesk-Variable);
+}
+
+.form-control-sm {
+  height: 40px;
+  width: 100%;
+  background-color: var(--light-grey);
+  border: 2px solid transparent;
+  font-family: var(--font-ClashGrotesk-SemiBold);
+}
+
+.form-control-sm:focus {
+  border: 2px solid transparent;
+  outline: none;
+  border-color: var(--primary-blue);
+}
+
+.form-control-div {
+  display: flex;
+  padding-bottom: 10px;
+  width: 100%;
+  gap: 1rem;
+}
+
+.form-btn {
+  background-color: var(--primary-blue);
+  color: white;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+/* End Roles Page */
