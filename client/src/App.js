@@ -1,6 +1,9 @@
 import "./App.css";
 import Home from "./Home";
 import React from 'react';
+import AssignRoles from "./Roles";
+import AddProd from "./AddProd";
+import Supply from "./Supply";
 import TrazLogo from "./images/traz_logo.png"
 import DigitalIndia from "./images/digital_india.png"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -13,13 +16,16 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" exact element={<Home />} />
+            <Route path="/roles" exact element={<AssignRoles />} />
+            <Route path="/addprod" exact element={<AddProd />} />
+            <Route path="/supply" exact element={<Supply />} />
+            <Route path="/track" exact element={<Home />} />
           </Routes>
         </div>
       </Router>
     </div>
   );
 }
-
 
 const Navbar = () => {
   return (
@@ -36,7 +42,7 @@ const Navbar = () => {
                 <Link to="/roles">
                   Roles
                 </Link>
-                <Link to="/addmed">
+                <Link to="/addprod">
                   Add Product
                 </Link>
                 <Link to="/supply">
